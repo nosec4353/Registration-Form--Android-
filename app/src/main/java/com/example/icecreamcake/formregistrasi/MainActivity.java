@@ -45,16 +45,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Bundle b = new Bundle();
 
 
-        //int nimValue = findViewById(R.id.nim)
+        String nimValue = nim.getText().toString();
+        //int myNim = Integer.parseInt(nimValue);
 
         //Menyisipkan tipe data string ke dalam objek bundle
         b.putString("nama",nama.getText().toString());
-        //b.putString("nim",);
+        b.putString("nim",nimValue);
         b.putString("alamat",alamat.getText().toString());
         b.putString("email",email.getText().toString());
-        //b.putString("pswd",pswd.getText().toString());
 
-        //Menambahkan bundle intent
+        //Menambahkan bundle ke intent
         intent.putExtras(b);
 
         //Memulai activity ke dua
