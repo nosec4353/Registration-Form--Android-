@@ -1,5 +1,6 @@
 package com.example.icecreamcake.formregistrasi;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,9 +9,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Calendar;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    EditText nim, nama, alamat, TTL, email, pswd;
+    EditText nim, nama, alamat, TTL, email;
     //TextView txtView;
     Button button;
 
@@ -34,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         alamat = (EditText) findViewById(R.id.alamat);
         TTL = (EditText) findViewById(R.id.TTL);
         email = (EditText) findViewById(R.id.email);
-        pswd = (EditText) findViewById(R.id.pswd);
     }
 
     @Override
@@ -46,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         String nimValue = nim.getText().toString();
-        //int myNim = Integer.parseInt(nimValue);
+
 
         //Menyisipkan tipe data string ke dalam objek bundle
         b.putString("nama",nama.getText().toString());
