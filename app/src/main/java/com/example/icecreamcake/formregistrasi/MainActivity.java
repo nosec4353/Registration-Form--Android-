@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Menyisipkan tipe data string ke dalam objek bundle
         b.putString("nama",nama.getText().toString());
         b.putString("nim",nimValue);
+        b.putString("TTL",TTL.getText().toString());
         b.putString("alamat",alamat.getText().toString());
         b.putString("email",email.getText().toString());
 
